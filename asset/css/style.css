@@ -1,0 +1,67 @@
+*{
+	box-sizing:border-box;
+}
+.tprod{
+	
+	border-style:solid;
+	background-color:#F4D03F;
+	/*transform:translate(),translateX(),translateY(),scaleX(),scaleY(),scale(),rotateX(),rotateY(),rotate();*/
+	/*transition-property: It will control the tranformation/change of any other property. we can give any property here*/
+	transition-property:transform;
+	transition-duration:0.4s;
+	
+	}
+.tprod:hover{
+	/*transform:translate(-250px,250px);*/
+	transform:scale(1.03); /*inc/dec the size of the box/content*/
+	/*transform:rotateY(180deg); /*rotate the content/box*/
+}
+.prod{
+	border-style:solid;
+	transition-property:transform;
+	transition-duration:0.4s;
+}
+.prod:hover{
+	transform:scale(1.03);
+	background-color:#F4D03F;
+}
+.about{
+	transition-property:transform;
+	transition-duration:0.4s;
+}
+.about:hover{
+	transform:scale(1.03);
+	background-color:#F4D03F;
+}
+.animbox{
+	
+	animation-name:myanim;
+	animation-duration:3s;
+	position:relative;
+	animation-iteration-count:infinite;
+}
+@keyframes myanim{
+	/*from{background-color:red;}
+	to{background-color:green;}*/
+	from{left:0px;right:0px}
+	to{left:500px;right:0px}
+}
+/*p{*/
+	/*animation-name:student;
+	animation-duration:5s;
+	position:relative;
+	animation-iteration-count:infinite;
+	animation-direction:alternate; /*reverse|alternate*/
+    /*animation-timing-function:linear;*/ /*ease|ease-in|ease-out|ease-in-out|linear*/
+/*}*/
+
+.issue:hover{
+	background-color:blue;
+	color:white;
+}
+
+.head:hover{
+	color:red;
+}
+
+
